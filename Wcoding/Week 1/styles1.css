@@ -1,0 +1,58 @@
+div {
+    height: 100px;
+    width: 100px;
+    margin 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: #35374B;
+    border-radius: 50px;
+}
+
+/*
+
+#red {
+    position: relative;
+    background-color: black;
+}
+
+#yellow {
+    position: relative;
+    background-color: black;
+    top: 120px;
+    left: -105px
+}
+
+#green {
+    position: relative;
+    background-color: black;
+    top: 240px;
+    left: -210px
+}
+
+#green:hover {
+    background-color: green;
+}
+
+#yellow:hover {
+    background-color: yellow;
+}
+
+#red:hover {
+    background-color: red;
+} 
+
+*/
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
+
+h1 {
+    position: fixed;
+}

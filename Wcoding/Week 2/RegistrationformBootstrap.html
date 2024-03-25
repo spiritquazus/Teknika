@@ -1,0 +1,113 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container vh-100">    
+        <h1 class="text-danger text-center display-5">Intro to forms</h1> 
+        <form action="/nowhere">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="username" class="form-label">Username:</label>
+                    <input 
+                    type="text" 
+                    name="typedUsername" 
+                    id="username" 
+                    placeholder="Username" 
+                    class="form-control">
+                </div>
+                
+                <div class="col-sm-12 col-md-6">
+                    <label for="password" class="form-label">Password:</label>
+                    <div class="col-md-6">
+                        <input 
+                        type="password" 
+                        name="typedPassword" 
+                        id="password" 
+                        placeholder="Password" 
+                        class="form-control">
+                    </div>
+                </div>
+            </div>
+     
+
+            <label for="about" class="form-label">Please tell me about your experiences</label>
+            <textarea 
+            name="experience" 
+            id="about" 
+            cols="15" 
+            rows="5" 
+            class="form-control" 
+            placeholder="(Actually I don't care. 100 words max.)"></textarea>
+        <div class="form-text float-end">We will promise your data will be kept secure and hidden.</div>
+        
+        <br>
+        <label for="exampleColorInput" class="form-label">Choose your favorite color!</label>
+        <input 
+        type="color" 
+        class="form-control form-control-color" 
+        id="exampleColorInput" 
+        value="#563d7c" 
+        title="Choose your color">
+            
+        <br>
+        <label for="size" class="form-label">Choose your size!</label>
+        <select name="sizes" id="size" class="form-control">
+            <option selected>what's your size?</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extralarge">XL</option>
+
+
+        </select>   
+        <br>
+        <label class="form-check-label my-3">Please select your age</label>
+
+        <div class="form-check form-switch form-check-inline">
+            <label for="teenager" class="form-check-label">13-19</label>      
+            <input type="radio" name="age" id="teenager" class="form-check-input">
+        </div>
+            
+        <div class="form-check form-switch form-check-inline">
+            <label for="adult" class="form-check-label">20-30</label>      
+            <input type="radio" name="age" id="adult" class="form-check-input">
+        </div>
+
+        <div class="form-check form-switch form-check-inline">
+            <label for="senior" class="form-check-label">30+</label>      
+            <input type="radio" name="age" id="senior" class="form-check-input">
+        </div>
+
+
+        <div class="form-check my-3">
+            <label class="form-check-label" for="agreement">I agree with everything in the contract!</label>
+            <input 
+            class="form-check-input" 
+            type="checkbox" 
+            id="agreement" 
+            name="TC">
+        </div>
+        
+        <br>
+        <button class="btn btn-primary">ORDER NOW!</button>
+    </form>
+
+    </div>
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

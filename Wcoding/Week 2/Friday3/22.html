@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=".favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="22.css" rel="stylesheet">
+</head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid navbar-expand-lg">
+            
+            <a class="navbar-brand h1" href="#"><img id="eyeNavi" src="./eyeNavi.jpg" class="me-3">Isaac Kim Portfolio</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav"> 
+                    <a href="" class="nav-link">Home</a>
+                    <a href="" class="nav-link">Contact</a>
+                    <a href="" class="nav-link">About me</a>
+                    <a href="" class="nav-link">Support</a>           
+                    <a href="" class="nav-link">Project List</a>                  
+                </div>
+            </div>
+
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-warning mx-2" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search for stuff here." aria-label="Search">
+                
+            </form>
+        </div>
+    </nav>
+
+    <!-- Carousel Test -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="bgTop" class="d-flex justify-content-center bg-dark">
+                <div class="d-flex justify-content-center align-items-center">
+                    
+                    <div class="col-md-12 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" fill="currentColor" class="bi bi-0-circle mb-5" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                            </svg>
+                              <br>
+                            <h1 class="text-white display-2 mb-5 ">DEUS EX MACHINA</h1>
+                            <label for="fsearch2" class="text-white form-label h4"><button class="btn btn-warning">Begin</button>  Start your new project here:</label>
+                            <input name="text" id="fsearch2" placeholder="Project name..." class="form-control">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./589108.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/7d/2a/9f/7d2a9fca264faa93561f72b5fc885fec.gif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <div class="container-fluid bg-body-secondary">
+        <div class="row justify-content-center">
+            
+            <div class="col-lg-3 text-center my-4 p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="rgb(90 90 90)" class="bi bi-0-circle" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                  </svg>
+                <h3 class="mt-3">Reinventing the wheel</h3>
+                <p>Breaking down codes, checking under the hood and fully understand the whys and hows are traits that separate good developers from average ones.</p>
+            </div>
+                
+            <div class="col-lg-3 text-center my-4 p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="rgb(255 3 62)" class="bi bi-0-circle" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                    <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>>
+                  </svg>
+                <h3 class="mt-3">Passion-driven</h3>
+                <p>Work is never a chore, and challenges are a chance to grow your innate talents.<br> "Falling down is optional. Getting back up is mandatory"</p>
+            </div>
+
+            <div class="col-lg-3 text-center my-4 p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="green" class="bi bi-0-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                <h3 class="mt-3">Focus on the fruit</h3>
+                <p>Results are everything, and a portfolio should prove what an aspiring developer can accomplish. Feel free to find my own collection of projects down below!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Boxes with shit-->
+    <div class="container-fluid bg-body-secondary">
+        <div class="row justify-content-center wrap">
+            <div id="firstBox" class="col-lg-6 col-sm-12 bg-dark text-center" style="height:30em;" data-bs-theme="dark">
+                <span class="h1 text-success me-4">Radion RPG - My First Project</span>
+                <button type="button" class="btn btn-outline-success col-2 my-4">Click here to test it out!</button>
+                            
+                <h4 class="text-success">
+                    <span class="badge text-bg-secondary col-1.5 mx-3">Information</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis accusantium ab voluptate neque nesciunt vitae, placeat accusamus ut cum ullam consectetur esse sunt in laudantium harum perspiciatis debitis aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nam numquam quia, officia error consequatur ipsam architecto dicta, nostrum voluptatibus nisi minima excepturi adipisci quo commodi exercitationem dolore at cumque. lorem
+                </h4>
+            </div>
+            <div id="firstImage" class="col-lg-6 col-sm-12 bg-white" style="height:30em;"><span id="radionImage"></span></div>
+            <div id="secondBox" class="col-lg-6 col-sm-12 bg-white" style="height:30em;">Test</div>
+            <div id="secondImage" class="col-lg-6 col-sm-12 bg-dark" style="height:30em;">Test</div>
+            <div id="thirdBox" class="col-lg-6 col-sm-12 bg-dark" style="height:30em;">Test</div>
+            <div id="thirdImage" class="col-lg-6 col-sm-12 bg-white" style="height:30em;">Test</div>id="firstImage"
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

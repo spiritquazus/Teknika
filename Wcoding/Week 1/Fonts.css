@@ -1,0 +1,17 @@
+h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+p:nth-of-type(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}

@@ -1,0 +1,38 @@
+
+
+/* All */
+
+nav {
+    background-color: grey;
+    width: 2000px;
+    height: 2000px;
+    
+}
+
+fieldset {
+    color:rgba(200, 255, 250);
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    border: 20px 0 25px 0;
+    border-color: rgb(150, 255, 250);
+    border-radius: 10px;
+    border-width: 15px;
+    background-color: rgb(250, 200, 250);
+    background-size: cover;
+    
+    height: 500px;
+}
+
+
+li{
+    display: inline-block;
+    margin: 0 25px;
+    color: blue !important;
+    text-decoration: none;
+    
+}
+
+li:hover {
+    background-color: aliceblue;
+    color: yellow !important;
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Radion RPG</title>
+        <!--Title on top!-->
+        <meta charset="UTF-8">
+        <link href="RadionCSS.css" rel="stylesheet">
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+    <div id="bg"> <!--the entire HUD-->
+
+       <div id="screenTitle"> <div id="radionIcon"></div>Radion RPG       <div id="radionIcon"></div></div>
+        <div class="screensGroup">
+            
+            <nav id="screen">
+                <nav id="screenBackground"></nav>
+                    <div id="screenActive"> <!--AKA cinematics--></div>
+                    <div id="monsterStats">
+                        <p id="monsterName"></p>
+                        <p id="monsterHealth">Health: </p>
+                        <p id="monsterLevel">Level: </p>
+                        <p id="monsterAttackMin">Damage: </p><span> ~ </span><span id="monsterAttackMax"></span>
+                        <p id="monsterSkills">Skills: </p>
+                    </div>
+                
+
+
+            </nav>
+                <!--stats and equipment-->
+            <nav id="sideScreen">
+                <nav class="PCstatus">
+                    <ul>
+                        <legend>Status</legend>
+                        <li><img class="statIcon" id="healthIcon"><button class="stat" id="healthText">Health</button> <span id="PChealth">100</span> <span>/</span> <span id="PCmaxHealth">100</span></li>
+                        <li><img class="statIcon" id="manaIcon"><button class="stat" id="manaText"> Radion</button> <span id="PCmana">50</span> <span>/</span> <span id="PCmaxMana">50</span></li>
+                        <li><img class="statIcon" id="ammoIcon"><button class="stat" id="ammoText"> Ammo</button> <span id="Ammo">5</span></li>
+                        <li><img class="statIcon" id="experienceIcon"><button class="stat" id="xpText"> Experience</button> <span id="experience">20</span></li>
+                    </ul>
+                </nav>
+                <nav class="PCstatus" id="inventoryBlock">
+                    <img id="beltUI" src="gallery/beltui2.png">
+                    <button id="bagOpener">Open Bag</button>
+                    <ul id="inventoryContainer">
+                        <li><img class="statIcon" id="knifeIcon"><button class="item">Rusty Knife</button></li>
+                        <li><img class="statIcon" id="pistolT1Icon"><button class="item">Old Pistol</button></li>
+                        <div class="borderBottom"></div>
+                    </ul>
+                    
+                </nav>
+
+            </nav>
+
+            <!--Log + Radio Container (FLEX ROW)-->
+            <div id="logAndRadio">
+                <!--Chat log-->
+                <nav id="log">
+                    <div id="text"><span>Welcome to Radion RPG!</span></div>
+                </nav>
+                <!--Radio-->
+                <nav id="radioHUD"> 
+                    <span id="whatsPlayingRadio">Radio System</span>
+                    <div>
+                        <button id="buttonBack">N/A</button>
+                        <button id="buttonPausePlay">Play</button>
+                        <button id="buttonForward">N/A</button>
+                    </div>
+                </nav>
+
+            </div>
+    </div>
+    </div>
+    </body>
+
+
+    <!--STICKY HUD-->
+    
+    
+    <div id="stickyHud">    
+        <img id="huda1" src="gallery/huda1.png">   
+            <!--Navigation Buttons-->
+            <nav id="buttons">
+                <button id="button1">Introduction</button>
+                <button id="button2">Start your adventure</button>
+                <button id="button3">N/A</button>
+                <button id="button4">N/A</button>
+            </nav>    
+        <img id="huda2" src="gallery/huda2.png">        
+        </div>
+    </div>
+
+    <script src="RadionJS.js"></script>
+    <script src="RadionJS2.js"></script>
+
+</html>

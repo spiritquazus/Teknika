@@ -1,0 +1,96 @@
+/* NAVBAR DESKTOP */
+#navBar {
+    margin-top: 50px;
+    border-radius: 2%;
+    padding: 25px 10px;
+    flex-direction: row;
+    border-style: solid;
+    border-color: blue;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* NAVBAR MOBILE */
+@media (max-width: 800px) {
+
+    #navBar {
+        margin-top: 50px;
+        border-radius: 2%;
+        flex-direction: column;
+        border-style: solid;
+        border-color: red;
+        display: flex;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        align-content: center; /* aligns the containers of the text */
+        align-items: center; /* this will align the text since theyre items. WITHIN the text containers of the navbar */
+    }
+
+}
+
+/* NAVBAR SPACE BETWEEN ELEMENTS */
+.navBarElement {
+    padding: 20px;
+    
+}
+
+/* CONTENT DESKTOP */
+#bigBox {
+    border-radius: 2%;
+    border-style: solid;
+    border-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10%;
+    max-width: 80%;
+
+}
+
+.smallBoxClass {
+    border-radius: 2%;
+    border-style: solid;
+    border-color: blue;
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    padding-top: 25%;
+    margin: 4px;
+    height: (10vw);
+}
+
+/* CONTENT MOBILE */
+@media (max-width: 800px) {
+
+    #bigBox {
+        border-radius: 2%;
+        flex-direction: column;
+        border-style: solid;
+        border-color: blue;
+        display: flex;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .smallBoxClass {
+        border-radius: 2%;
+        border-style: solid;
+        border-color: red;
+        display: inline-block;
+        width: 25%;      
+        height: auto;
+        padding-top: 25%;
+        margin: 4px;
+    }
+}
+
+/* FONT */
+div {
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    font-style: normal;
+}

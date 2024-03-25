@@ -1,0 +1,18 @@
+ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+
+
+
+    }
+li {
+    Flex-grow: 1;
+
+
+
+    }
+
+

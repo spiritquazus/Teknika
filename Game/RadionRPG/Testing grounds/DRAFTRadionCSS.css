@@ -1,0 +1,470 @@
+
+/* TODOLIST ==================
+/* a lot... but first adjust all the elements as is, 
+/* use bootstrap! reverse engineer the fucker
+/* scrollbar customization. see down down below this css.
+/*add the skills ui, the lvl up ui
+
+
+VH-100 for the BG!!
+
+example from Bootstrap:
+@media (min-width:768px){
+    .col-md{flex:1 0 0%}
+    .row-cols-md-auto>*{flex:0 0 auto;width:auto}
+    .row-cols-md-1>*{flex:0 0 auto;width:100%}
+    .row-cols-md-2>*{flex:0 0 auto;width:50%}
+    .row-cols-md-3>*{flex:0 0 auto;width:33.33333333%}
+    .row-cols-md-4>*{flex:0 0 auto;width:25%}
+    .row-cols-md-5>*{flex:0 0 auto;width:20%}
+    .row-cols-md-6>*{flex:0 0 auto;width:16.66666667%}
+
+    .col-md-auto{flex:0 0 auto;width:auto}
+    .col-md-1{flex:0 0 auto;width:8.33333333%}
+    .col-md-2{flex:0 0 auto;width:16.66666667%}
+    .col-md-3{flex:0 0 auto;width:25%}
+    .col-md-4{flex:0 0 auto;width:33.33333333%}
+    .col-md-5{flex:0 0 auto;width:41.66666667%}
+    .col-md-6{flex:0 0 auto;width:50%}
+    .col-md-7{flex:0 0 auto;width:58.33333333%}
+    .col-md-8{flex:0 0 auto;width:66.66666667%}
+    .col-md-9{flex:0 0 auto;width:75%}
+    .col-md-10{flex:0 0 auto;width:83.33333333%}
+    .col-md-11{flex:0 0 auto;width:91.66666667%}
+    .col-md-12{flex:0 0 auto;width:100%}
+
+
+
+
+
+    Breakpoint	for media queries
+Extra small	<576px
+Small		≥576px phones
+Medium		≥768px
+Large		≥992px Ipad in portrait mode
+Extra large	≥1200px small computer
+XXL         ≥1400px Normal.
+
+@media (min-width: 800)
+
+/*=================UI ELEMENTS================*/
+
+body {
+    border: 4px;
+    margin: 0;
+    border-color: black;
+    border-style: solid;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+#bg {
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/001/525/909/large/leonardo-iezzi-ground-texture-02.jpg?1447973636);
+    background-size: cover;
+    max-height: 200%;
+}
+
+/*fonts*/
+#screenTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    background-color: rgba(70, 100, 100, 0.9);   
+}
+
+legend{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: 650;
+    font-style: normal;
+    margin: 0 0 4px;
+}
+
+
+
+#screenActive img {
+    max-width: 650px; 
+    max-height: 300px; 
+}
+
+#screen{
+    border: 3px;
+    margin: 7px 35px 7px 7px;
+    border-color: grey;
+    border-style: solid;
+    max-width: 700px;
+    max-height: 500px;
+    height: 400px;
+    width: 700px;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/032/627/354/large/mateusz-kamela-highresscreenshot00077.jpg?1606994832);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* monster stats, initially should be hidden */
+#monsterStats{
+    border-style: solid;
+    background-color: red;
+}
+
+
+#sideScreen{
+    border: 3px;
+    margin: 7px 7px 7px 0px;
+    border-color: grey;
+    max-width: 300px;
+    max-height: 400px;
+    height: 300px;
+    min-width: 250px;
+    flex-grow: 1; 
+}
+
+
+.screensGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:  space-between;
+    Flex-grow: 1; 
+}
+
+#log{
+    border: 3px;
+    margin: 7px;
+    border-color: grey;
+    border-style: solid;
+    background-color: rgba(70, 100, 100, 0.9);
+    background-image: url(gallery/loghud.png);
+    max-width: 680px;
+    max-height: 280px;
+    height: 280px;
+    width: 680px;
+    overflow-y: scroll;
+    min-height: 10px;
+    color: green;
+    transition: margin 0.4s 0.1s ease-in-out
+    
+}
+
+
+
+
+
+.PCstatus{
+    border-radius: 5%;
+    border-style: solid;
+    border-color: grey;
+    margin: 5px 0px;
+    background-color: rgba(70, 100, 100, 0.9);
+}
+.PCstatus ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 15px;
+    text-align: left;
+}
+
+#inventoryBlock {
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 1px;
+    width: 32vh;
+    height: 9vh;
+    transition: height 0.4s 0.1s ease-in-out;
+}
+
+#beltUI {
+    position: relative;
+    top: 1vh;
+    width: 150%;
+    max-height: 130%;
+    margin-top: -10%;
+    transition: right 0.3s ease-in-out;
+}
+
+#bagOpener{
+    margin-top: -16%;
+    position: relative;
+    top: -1.2vh;
+    left: 10.5vh;
+}
+
+
+
+
+/*===========RADIO SYSTEM=========*/
+
+#logAndRadio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+
+#radioHUD{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: rgb(61, 61, 71);
+
+    background-image: url(gallery/radiohudbg.png);
+    justify-content: center;
+    margin: 5px 25px;
+    background-color: rgba(70, 100, 100, 0.9);
+    max-width: 305px;
+    /* 304 by 90~ */
+}
+
+/* title of song*/
+#radioHUD span {
+    order: -1;
+    margin: 12px;
+    color: rgb(225, 220, 220);
+
+}
+
+/* Buttons for radio */
+#buttonBack{
+    width: 50px;
+    margin-bottom: 15px;
+}
+#buttonPausePlay{
+    width: 70px;
+    margin-bottom: 15px;
+}
+#buttonForward{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/*=================BUTTONS AND ICONS================*/
+
+
+
+#radionIcon {
+    background-image: url(gallery/radiongif.gif);
+    max-width: 30px;
+    max-height: 30px;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+    
+
+}
+
+/* radio Group
+
+/* statgroup */
+.statIcon {
+
+    width: 25px; /* Width of the sprite */
+    height: 25px; /* Height of the sprite */
+    padding: 0;
+
+    vertical-align: middle;
+    margin: 2px;
+}
+
+#healthIcon {
+    background-image: url(gallery/inventory.png);
+    background-position: 0px 0px;
+}
+#manaIcon {
+    background-image: url(gallery/inventory.png);
+    background-position: -25px 0px;
+    transform: scaleX(-1);
+}
+#ammoIcon {
+    background-image: url(gallery/inventory.png);
+    background-position: -50px 0px;
+    transform: scaleX(-1);
+}
+#experienceIcon {
+    background-image: url(gallery/inventory.png);
+    background-position: -75px 0px;
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+#knifeIcon {
+    background-image: url(gallery/inventory.png);
+    background-position: -100px 0px;
+    width: 100px; /* Width of the sprite */
+    height: 100px; /* Height of the sprite */
+
+}
+
+#pistolT1Icon {
+    background-image: url(gallery/inventory.png);
+    background-position: -200px 0px;
+    width: 100px; /* Width of the sprite */
+    height: 100px; /* Height of the sprite */
+}
+
+.borderBottom {
+    margin: 15px 0 10px 0;
+    border-style: solid;
+    border-color: rgb(55, 55, 55);
+    border-bottom: 1px;
+
+
+
+}
+
+button {
+    width: 100px; /* Width of the sprite */
+    height: 40px; /* Height of the sprite */
+    background-color: rgba(200, 200, 200, 0.7);
+    position: relative;
+    vertical-align: middle;
+    border-color: rgb(55, 55, 55);
+    margin: auto 6px; 
+    font-size: 15px;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+    color: rgba(9, 44, 26, 0.9); 
+    font-optical-sizing: auto;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+button:hover{
+    transform: scale(120%);
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
+
+
+#slimeBattler {
+    content: url(https://cdna.artstation.com/p/assets/images/images/015/912/400/original/nicholas-taggart-slime-skul1l.gif?1550147732);
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+.itemContainer {
+    display: flex;
+    align-content: center;
+}
+
+
+/* sticky test */
+#stickyHud{
+    display: flex;
+    position: fixed;
+    width: 60vh;
+    height: 12vh;
+    background-color: red;
+    bottom: 0px;
+    border-style: solid;
+    border-color: pink;
+    /*align-items: center;
+    justify-content: center; */
+
+}
+
+#buttons{
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    right: 6vh;
+    bottom: 2vh;
+}
+
+#buttons > button{
+    width: 13vh;
+    height: 5vh;  
+}
+
+#huda1, #huda2{
+    position: relative; 
+    width: 7vh;
+    height: 15vh;
+    right: 4vh; 
+    bottom: 1.2vh;
+    z-index: 2;
+}
+#huda2 {
+    left: -7vh;   
+}
+
+
+
+
+
+/* MOBILE TEST */
+
+@media screen and (max-width: 1080px) and (orientation: portrait) {
+
+    body{
+        display: flex;
+        background-color: black;
+        align-items: center;
+        flex-direction: column;
+        }
+
+    .screensGroup #log{
+        border: 3px;
+        margin: 7px;
+        border-color: grey;
+        border-style: solid;
+        background-color: rgba(70, 100, 100, 0.9);
+        background-image: url(gallery/loghud.png);
+        background-repeat: no-repeat;
+        max-width: 2080px;
+        min-height: 30vh; 
+        height: 50%;
+        width: 80vh;
+        overflow-y: scroll;        
+    }
+
+    #stickyHud{
+        display: flex;
+        align-self: center;
+        position: fixed;
+        width: 60vh;
+        height: 12vh;
+        background-color: red;
+        bottom: 0px;
+        border-style: solid;
+        border-color: pink;
+        /*align-items: center;
+        justify-content: center; */
+    }
+}
+
+
+/* WEBKIT FOR SCROLLBAR! LATER
+
+::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.

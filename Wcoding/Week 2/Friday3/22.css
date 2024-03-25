@@ -1,0 +1,58 @@
+
+#eyeNavi {
+    max-width: 10vh;
+    max-height: 10vh;
+}
+
+.carousel-item {
+    max-width: 250vh;
+}
+
+#bgTop {
+    background-color: black;
+    background-image: url("https://wallpapercave.com/wp/wp2757877.gif");
+    height: 2500px;
+    max-height: 121.5vh !important;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -70px
+
+}
+
+
+#radionImage {
+    background-image: url("./Screenshot 2024-03-22 170303.png") !important;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 20vh;
+    min-height: 50vh;
+    margin: 12px;
+}
+
+
+#carouselFirst {
+    background-color: black;
+    background-image: url("https://wallpapercave.com/wp/wp2757877.gif");
+    height: 2500px;
+    max-height: 120vh !important;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -49px
+
+}
+
+
+#carouselSecond {
+    background-color: black;
+    background-image: url("https://i.pinimg.com/originals/7d/2a/9f/7d2a9fca264faa93561f72b5fc885fec.gif");
+    height: 2500px;
+    max-height: 120vh !important;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -49px
+
+}

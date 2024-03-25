@@ -1,0 +1,107 @@
+body {
+    background-color: rgba(10, 20, 60, 0.9);
+}
+
+#click {
+    margin: 500px;
+    padding: 20px 25px;
+    border: none;
+    border-width: 10px;
+    border-style: solid;
+    border-color: yellow;
+    background-color: rgba(10, 20, 60, 0);
+    color: yellow;
+    font-size: 25px;
+    font-family: Georgia, sans-serif;
+}
+
+#click:hover {
+    position: relative;
+    color: red;
+    border-color: white;
+    background-color: yellow;
+    box-shadow: 0 35px 25px -30px yellow;
+    transform: scale(1.4, 1.4) translateY(-20px);
+    transition: box-shadow 0.4s linear, background-color 0.7s linear, transform 0.3s ease-in;
+}
+
+#click:not(:hover) {
+    transition: box-shadow 0.4s linear, background-color 0.7s linear, transform 0.3s ease-in;
+}
+
+#click {
+    cursor: zoom-in;
+}
+
+h1 {
+    background-color: #2a9d8f;
+    border: 5px solid #264653;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align:center;
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #e9c46a;
+}
+h1:nth-of-type(3n) {
+    background-color: #f4a261;
+}
+h1:nth-of-type(4n) {
+    background-color: #e76f51;
+}
+
+section h1:nth-of-type(1) {
+    transition: transform 1s 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+section h1:nth-of-type(1):hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+section h1:nth-of-type(2) {
+    transition: transform 1s 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+section h1:nth-of-type(2):hover {
+    transform: scale(-0.5, 1);
+    cursor: pointer;
+}
+
+section h1:nth-of-type(3) {
+    transition: transform 1s 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+section h1:nth-of-type(3):hover {
+    transform: skew(20deg, 50deg);
+    cursor: pointer;
+}
+
+section h1:nth-of-type(4) {
+    transition: transform 1s 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+section h1:nth-of-type(4):hover {
+    transform: translate(20%, 100px);
+    cursor: pointer;
+}
+
+section h1:nth-of-type(5) {
+    transition: transform 1s 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+section h1:nth-of-type(5):hover {
+    transform: translate(20%, 100px) rotate(100deg);
+    cursor: pointer;
+}
